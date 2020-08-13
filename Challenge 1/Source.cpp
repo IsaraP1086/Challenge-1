@@ -11,7 +11,7 @@ double SD(int a,int b) {
 	}
 	sd = sqrt(sum / (a - b));
 	return sd;
-}
+} 
 int main() {
 	int a, b,i;
 	scanf_s("%d %d", &a, &b);

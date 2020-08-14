@@ -22,7 +22,7 @@ int main() {
 		printf("\nAverage = %.2lf", (a+b)/2.0);
 		printf("\nS.D. = %.2lf", SD(b,a));
 	}
-	else if(b>a){
+	else if(a>b){
 		for (i = a;i >= b;i--) {
 			printf("%d ", i); 
 		}

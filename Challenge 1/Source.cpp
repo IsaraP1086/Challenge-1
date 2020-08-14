@@ -15,19 +15,23 @@ double SD(int a,int b) {
 int main() {
 	int a, b,i;
 	scanf_s("%d %d", &a, &b);
-	if (a <= b) {
+	if (a < b) {
 		for (i = a;i <= b;i++) {
 			printf("%d ", i);
 		}
 		printf("\nAverage = %.2lf", (a+b)/2.0);
 		printf("\nS.D. = %.2lf", SD(b,a));
 	}
-	else {
+	else if(b>a){
 		for (i = a;i >= b;i--) {
 			printf("%d ", i); 
 		}
 		printf("\nAverage = %.2lf", (a+b)/2.0);
 		printf("\nS.D. = %.2lf", SD(a,b));
+	}else{
+		printf("%d",a);
+		printf("\nAverage = %d",a);
+		printf("\nS.D. = Doesn't Have");
 	}
 	printf("\n");
 	return 0;
